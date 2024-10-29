@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,39 +8,42 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+
     <div class="background">
         <div class="circulo1"></div>
         <div class="circulo2"></div>
         <div class="circulo3"></div>
+        <div class="circulo4"></div>
     </div>
 
-    <div class="login">
-        <h2>BEM VINDO</h2>
-        <h3>FAÇA LOGIN</h3>
-        
-        <form>
-            <input type="text" placeholder="Usuário" required>
-            <input type="password" placeholder="Senha" required>
-            <div class="remember-me">
-                <input type="checkbox" id="remember-me">
-                <label for="remember-me">Lembrar de mim</label>
-            </div>
-            <button type="submit">Entrar</button>
-        </form>
-
-        <div class="login2">
-            <h1>NOVO LOGIN</h1>
-
-            <form>
-                <button class="new">CRIAR CONTA</button>
-            </form>
+    <div class="container">
+        <div class="esquerda">
+            <h2>BEM VINDO</h2>
+            <br><br><br><br>
+            <h3>NOVO LOGIN</h3>
+            <button class="button">CRIAR CONTA</button>
         </div>
-
-        <div class="icons">
-            <a href=""><img src="/images/facebook-f.png" alt="Facebook"></a>
-            <a href=""><img src="/images/twitter-icon-free-png.webp" alt="Twitter"></a>
-            <a href=""><img src="/images/instagram-new.png" alt="Instagram"></a>
-            <a href=""><img src="/images/tiktok-icon-free-png.webp" alt="TikTok"></a>
+        <div class="direita">
+            <h2>FAÇA LOGIN</h2>
+            <div class="group">
+                <label for="usuario">USUÁRIO</label>
+                <input type="text" id="usuario" name="usuario"> 
+            </div>
+            <div class="group">
+                <label for="senha">SENHA</label>
+                <input type="password" id="senha" name="senha">
+            </div>
+            <div class="group">
+                <input type="checkbox" id="lembrar" name="lembrar">
+                <label for="lembrar">LEMBRAR DE MIM</label>
+            </div>
+            <button class="button">ENTRAR</button>
+            <div class="icons">
+                <img src="./images/facebook-f.png" alt="Facebook">
+                <img src="./images/tiktok-icon-free-png.webp" alt="TikTok">
+                <img src="./images/instagram-new.png" alt="Instagram">
+                <img src="./images/twitter-icon-free-png.webp" alt="Twitter">
+            </div>
         </div>
     </div>
 </body>

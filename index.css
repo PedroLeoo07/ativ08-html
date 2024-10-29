@@ -1,131 +1,129 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-
 body {
+    font-family: Arial, sans-serif;
+    background: #d1d0d0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-color: #ffffff;
+    height: 100vh;
+    margin: 0;
+    position: relative;
     overflow: hidden;
 }
-
 
 .background {
     position: absolute;
     width: 100%;
     height: 100%;
-    overflow: hidden;
 }
 
-.circle {
-    width: 350px;
-    height: 350px;
+.circulo1, .circulo2, .circulo3, .circulo4 {
+    position: absolute;
     border-radius: 50%;
-    filter: blur(50px);
     opacity: 0.5;
 }
 
-.circle1 { background-color: #ff4f30; top: 10%; left: 15%; }
-.circle2 { background-color: #ffe761; top: 50%; left: 60%; }
-.circle3 { background-color: #8a85ff; bottom: 20%; right: 15%; }
-.circle4 { background-color: #5de1e6; bottom: 30%; left: 40%; }
-
-.login {
-    position: relative;
-    z-index: 1;
-    width: 800px;
-    padding: 40px;
-    background: rgba(192, 192, 192, 0.8);
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    backdrop-filter: blur(10px);
+.circulo1 {
+    width: 350px;
+    height: 350px;
+    background: rgb(238, 217, 29);
+    top: 430px;
+    left: 390px;
 }
 
-.login h2 {
-    font-weight: 700;
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 10px;
+.circulo2 {
+    width: 400px;
+    height: 400px;
+    background: rgb(255, 48, 162);
+    bottom: 250px;
+    right: 250px;
 }
 
-.login h3 {
-    font-size: 1.2em;
-    color: #555;
-    margin-bottom: 25px;
+.circulo3 {
+    width: 250px;
+    height: 250px;
+    background: rgb(157, 71, 255);
+    top: 160px;
+    left: 54%;
+    transform: translateX(-50%);
 }
 
-.login input[type="text"],
-.login input[type="password"] {
-    width: 85%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.7);
-    font-size: 0.95em;
-    color: #333;
-    outline: none;
-    transition: all 0.3s;
+.circulo4 {
+    width: 150px;
+    height: 150px;
+    background: rgba(60, 232, 255, 0.9);
+    top: 58%;
+    left: 890px;
 }
 
-.login input[type="text"]:focus,
-.login input[type="password"]:focus {
-    border-color: #333;
-    background: rgba(255, 255, 255, 1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.remember-me {
+.container {
     display: flex;
-    align-items: center;
-    font-size: 0.9em;
-    color: #555;
-    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 1;
 }
 
-.login button {
-    width: 90%;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    background-color: #333;
-    color: #fff;
-    font-size: 1em;
-    font-weight: 500;
-    cursor: pointer;
+.esquerda {
+    padding: 20px;
+    width: 300px;
+}
+.direita {
+    padding: 20px;
+    width: 300px;
+}
+
+.left {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px;
     margin-top: 20px;
-    transition: background-color 0.3s ease;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.login button:hover {
-    background-color: #555;
+.button:hover {
+    background: #555;
+}
+
+.group {
+    margin-bottom: 15px;
+}
+
+.group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .icons {
+    display: flex;
+    justify-content: space-around;
     margin-top: 20px;
-}
-
-.icons a {
-    margin: 0 8px;
-    color: #333;
-    text-decoration: none;
 }
 
 .icons img {
     width: 30px;
     height: 30px;
-    opacity: 0.7;
-    transition: opacity 0.3s;
-}
-
-.icons img:hover {
-    opacity: 1;
 }
